@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profilePic from "../images/picMe.jpg";
 
 function About() {
     return (
@@ -12,7 +13,7 @@ function About() {
             </section>
             <section className="row">
                 <article className="col-10">
-                    <img className="img-fluid float-left mr-3" src="./css/picMe.jpg" alt="Elliott Payne" />
+                    <img className="img-fluid float-left mr-3" src={profilePic} alt="Elliott Payne" />
                     <p>
                     Hi! My name is Elliott Payne, I am a Full Stack Web Developer from Austin, TX with extensive knowledge in HTML, CSS, JS, JQuery, Node.js, Express, SQL, MongoDb, ReactJs, Github, and Bootstrap. I live in Austin with my girlfriend, my dog Eleanor, and our budgie pudgy. I grew up overseas on military bases, mostly in Europe, where my parents worked as elementary school teachers. I attended Texas State University and graduated with a Bachelor’s degree in Recreation Administration. For almost a decade I worked and managed for Omni Hotels & Resorts untill I was able to persue my passion in Coding and Web Development.
                     </p>
