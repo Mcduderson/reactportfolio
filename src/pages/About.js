@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import profilePic from "../images/picMe.jpg";
+//import { Document } from 'react-pdf'
+import resume from "../images/Elliott-Payne(2).pdf";
 
 function About() {
     return (
@@ -26,11 +28,11 @@ function About() {
                     To contact me please use my LinkedIn profile or email me at e.payne000@gmail.com.
                     </p>
                     <hr />
-                    <Link className="text-light" href="css\Elliott-Payne(2).pdf">Link to PDF Resume</Link>
+                    <Link className="text-light" to={resume} target="_blank">Link to PDF Resume</Link>
                     <hr />
-                    <Link className="text-light" href="https://github.com/Mcduderson">Link to Github profile</Link>
+                    <Link className="text-light" to={{ pathname: "https://github.com/Mcduderson"}} target="_blank">Link to Github profile</Link>
                     <br />
-                    <Link className="text-light" href="https://www.linkedin.com/in/elliott-payne-8852661ab/">Link to LinkedIn profile</Link>              
+                    <Link className="text-light" to={{ pathname: "https://www.linkedin.com/in/elliott-payne-8852661ab/"}} target="_blank">Link to LinkedIn profile</Link>              
                 </article>
             </section>
         </main>
